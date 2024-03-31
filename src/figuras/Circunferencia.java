@@ -20,8 +20,13 @@ public class Circunferencia {
         double d = 2 * rad;
         System.out.println("Di�metro: " + d);
         System.out.println("Color: " + color);
-        double area = 2 * PI * rad * rad;
+        double area = calcularArea();
         System.out.println(area);
+    }
+
+    public double calcularArea() {
+        double area = 2 * PI * rad * rad;
+        return area;
     }
     private static final double PI = 3.1416;
     private String color;
