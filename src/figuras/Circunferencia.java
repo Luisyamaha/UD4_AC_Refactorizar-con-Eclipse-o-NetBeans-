@@ -20,9 +20,10 @@ public class Circunferencia {
         double d = 2 * rad;
         System.out.println("Di�metro: " + d);
         System.out.println("Color: " + color);
-        double area = 2 * 3.1416 * rad * rad;
+        double area = 2 * PI * rad * rad;
         System.out.println(area);
     }
+    private static final double PI = 3.1416;
     private String color;
 
     public boolean esIgual(Circunferencia otro, boolean conDecimales) {
